@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <listViews>
+        <fullName>AboutTopics</fullName>
+        <columns>Name</columns>
+        <columns>DueDate</columns>
+        <columns>Recipient</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>FeedbackRequestState</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Subject</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>FeedbackRequestState</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </filters>
+        <label>Feedback About Topics</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Name</columns>
+        <columns>Subject</columns>
+        <columns>FeedbackType</columns>
+        <columns>DueDate</columns>
+        <columns>Recipient</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>FeedbackRequestState</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Feedback</label>
+    </listViews>
+</CustomObject>
